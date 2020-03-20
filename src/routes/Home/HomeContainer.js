@@ -15,8 +15,7 @@ const GET_MOVIES = gql`
 `;
 // eslint-disable-next-line react/display-name
 export default () => {
-    // let {loading, data} = movieQuery();
-    let {loading, data} = useQuery(GET_MOVIES);
+    const {loading, data} = useQuery(GET_MOVIES);
     
     return (
         <HomePresenter
